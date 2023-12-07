@@ -20,8 +20,18 @@
     margin: 10px;
 }
 
+.box-img-bg{
+    width:200px;
+    height:200px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 10px;
+    display: inline;
+}
+
 .box-img{
     width:200px;
     height:200px;
+
 }
+
 
