@@ -11,58 +11,68 @@
     
 </head>
 <body>
-    <?php
-        include "header.html";
-    ?>
+    <div class = "header-bg">
+        <div><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link"><img class = "icon" src = "img/icon.png"><a></div>
+        <div class = "logo-name"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link">汪汪汪</a></div>
+        <div class = "header-row">
+            <ul>
+                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">項目1</a></li>
+                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">項目2</a></li>
+                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">項目3</a></li>
+                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">項目4</a></li>
+                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">項目5</a></li>
+            </ul>
+        </div>
+    </div>
 
     <div class = "container">
-    sad test12356
+    sad test1
     </div>
     <p>css test</p>
 
     <footer class="footer">
-            <div class="footer_container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>顧客協助</h4>
-                        <ul>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">客服中心</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">幫助中心</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">付款方式</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">退貨退款</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>關於我們</h4>
-                        <ul>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">關於我們</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">加入我們</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">隱私權政策</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">限時特賣</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>付款方式</h4>
-                        <ul>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Mastercard</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">JCB</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">SEVEN</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FAMILY</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">HILIFE</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">T-CAT</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>關於我們</h4>
-                        <ul>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FaceBook</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Instagram</a></li>
-                            <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Line</a></li>
-                        </ul>
-                    </div>
+        <div class="footer_container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>顧客協助</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">客服中心</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">幫助中心</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">付款方式</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">退貨退款</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>關於我們</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">關於我們</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">加入我們</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">隱私權政策</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">限時特賣</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>付款方式</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Mastercard</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">JCB</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">SEVEN</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FAMILY</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">HILIFE</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">T-CAT</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>關於我們</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FaceBook</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Line</a></li>
+                </ul>
                 </div>
             </div>
-        </footer>
-</body>
+        </div>
+    </footer>
+</body> 
 </html>
