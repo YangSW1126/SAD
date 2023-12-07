@@ -13,7 +13,7 @@
 <body>
     <div class = "header-bg">
         <div><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link"><img class = "icon" src = "img/icon.png"><a></div>
-        <div class = "logo-name"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link">汪汪汪</a></div>
+        <div class = "logo-name"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link"></a></div>
         <div class = "header-row">
             <ul>
                 <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">項目</a></li>
@@ -26,8 +26,30 @@
     </div>
 
     <div class = "container">
-        <a href = "main.html" class >首頁</a>
+        <a href = "main.html" class = "test-main">首頁</a>
     </div>
+
+    <div class = "center">
+        <h1>登入</h1>
+        <form action = "LoginCheck.php" method = "post">
+            <div class = "txt_field">
+                <input type = "text" name = "userEmail" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class = "txt_field">
+                <input type = "password" name = "userPassword" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <div class="forgot">忘記密碼</div>
+            <input type="submit" name = "submit" value = "登入">
+            <div class="sign_up">
+                <a href="RegistrationPage.php">註冊</a> 
+            </div>
+        </form>
+    </div>
+
 
     <footer class="footer">
         <div class="footer_container">
