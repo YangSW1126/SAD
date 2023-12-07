@@ -12,7 +12,7 @@
 </head>
 <body>
     <?php
-        include "header.php";
+        include "header.html";
     ?>
 
     <div class = "container">
@@ -21,8 +21,8 @@
     <p>css test</p>
 
     <?php
-        include "footer.php";
+        include "footer.html";
     ?>
-
+    
 </body>
 </html>
