@@ -13,7 +13,7 @@
 <body>
     <div class = "header-bg">
         <div><a href = "main.php" target="_blank" class = "icon-link"><img class = "icon" src = "img/icon.png"><a></div>
-        <div class = "logo-name"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link">汪汪汪</a></div>
+        <div class = "logo-name"><a href = "main.php" target="_blank" class = "icon-link">汪汪汪</a></div>
         <div class = "header-row">
             <ul>
                 <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">項目1</a></li>
