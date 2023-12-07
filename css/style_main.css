@@ -18,20 +18,38 @@
 .box{
     display: inline;
     margin: 10px;
+
 }
 
 .box-img-bg{
     width:200px;
     height:200px;
-    background-color: rgb(190, 190, 190);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    display: inline;
+    border: 3px solid rgb(0, 0, 0);
+    display: inline-block;
+    box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.2);
+    
 }
 
 .box-img{
-    width:200px;
-    height:200px;
-
+    width:120px;
+    height:120px;
+    margin-top: 20px;
+    margin-left:40px;
 }
 
+.content-ul{
+    display: block;
+    width:900px;
+}
+
+.content-lable{
+    color:black;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top:10px;
+    text-align: center;
+    display:block
+}
 
