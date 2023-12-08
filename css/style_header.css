@@ -50,7 +50,7 @@ table {
 
 .icon{
     position: absolute;
-    left: 350px;
+    left: 15%;
     top: 10px; 
     height: 60px;
     width: 60px;
@@ -76,7 +76,7 @@ table {
     font: 18px "微軟正黑體";
     position: absolute;
     top:28px;
-    right: 200px; 
+    right: 10%; 
 }
 
 .link{

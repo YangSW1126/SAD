@@ -1,15 +1,21 @@
 .content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    display:flex;
+    width:100%;
+
 }
 
 .content-container{
 	width: 100%;
 	margin:auto;
 	vertical-align: sub;
+}
 
+.content-col{
+    margin-top: 350px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .content-row{
@@ -36,12 +42,11 @@
     width:120px;
     height:120px;
     margin-top: 20px;
-    margin-left:40px;
+    margin-left: 40px;
 }
 
 .content-ul{
-    display: block;
-    width:900px;
+    display: inline;
 }
 
 .content-lable{
