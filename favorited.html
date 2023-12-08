@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <link rel = "stylesheet" href = "css/style_footer.css?v=<?=time()?>">
     <link rel = "stylesheet" href = "css/style_header.css?v=<?=time()?>">
-
-
     <link rel = "stylesheet" href = "css/style_favorited.css?v=<?=time()?>">
 
     <script src = "js/favorites_script.js" defer></script>
@@ -29,24 +29,33 @@
         </div>
     </div>
     favorite
-    <div class = "table-container">
-        <table class="table table-bordered">
-            <thead class = "thead-dark">
-                <tr>
-                    <th class = "table-row">收藏項目</th>
-                    <th class = "table-row">編輯收藏</th>
-                </tr>
-            </thead>
-                <tr>
-                    <td>123</td>
-                    <td><button class = "star-bt" onclick = "favClick(1)"><img class = "star" id = "1" src = "img/star-fill.svg"></button></td>
-                </tr>
-                <tr>
-                    <td>123</td>
-                    <td><button class = "star-bt" onclick = "favClick(2)"><img class = "star" id = "2" src = "img/star-fill.svg"></button></td>
-                </tr>
-        </table>
-    </div>
+
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th class = "table-row"></th>
+            <th class = "table-row">收藏項目</th>
+            <th class = "table-row">編輯收藏</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img class = "img-type" src = "img\activity.svg"></td>
+                <td>123</td>
+                <td><button class = "star-bt" onclick = "favClick(1)"><img class = "star" id = "1" src = "img/star-fill.svg"></button></td>
+            </tr>
+            <tr>
+                <td><img class = "img-type" src = "img\activity.svg"></td>
+                <td>123</td>
+                <td><button class = "star-bt" onclick = "favClick(2)"><img class = "star" id = "2" src = "img/star-fill.svg"></button></td>
+            </tr>
+            <tr>
+                <td><img class = "img-type" src = "img\activity.svg"></td>
+                <td>123</td>
+                <td><button class = "star-bt" onclick = "favClick(3)"><img class = "star" id = "3" src = "img/star-fill.svg"></button></td>
+            </tr>
+        </tbody>
+      </table>
 
 
 
