@@ -1,0 +1,29 @@
+.table-container{
+    width: 80%;
+    margin: 10% 0 0 12.5%;
+    line-height:40px;
+    
+
+}
+
+.table-bordered{
+    border: 2px black;
+}
+
+.table-row{
+    border-color: rgb(209, 0, 0);
+    text-align:center
+}
+
+
+.star-bt{
+    border: none;
+    background-color: white;
+    outline: 0 !important;
+}
+
+.star{
+    margin-bottom: 5px;
+    width:35px;
+    height:35px;
+}

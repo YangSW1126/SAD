@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "css/style_footer.css?v=<?=time()?>">
     <link rel = "stylesheet" href = "css/style_header.css?v=<?=time()?>">
-    <link rel = "stylesheet" href = "css/style_main.css?v=<?=time()?>">
+
+
+    <link rel = "stylesheet" href = "css/style_favorited.css?v=<?=time()?>">
+
+    <script src = "js/favorites_script.js" defer></script>
+
     
     <title>Document</title>
     
@@ -23,30 +28,25 @@
             </ul>
         </div>
     </div>
-    
-    <div class = "content">
-        <div class = "content-container">
-            <div class = "content-col">
-                <div class = "content-row">
-                        <ul class = "content-ul">
-                            <li class = "box"><a href = "application.html"><span class = "box-img-bg"><img class = "box-img" src = "img/doc.svg"><p3 class = "content-lable">補助查詢</p3></a></span></li>
-                            <li class = "box"><a href = "https://www.facebook.com/profile.php?id=100090699375511"><span class = "box-img-bg"><img class = "box-img" src = "img/activity.svg"><p3 class = "content-lable">搜尋活動</p3></a></span></li>
-                            <li class = "box"><a href = "https://www.facebook.com/profile.php?id=100090699375511"><span class = "box-img-bg"><img class = "box-img" src = "img/book.svg"><p3 class = "content-lable">樂齡學習</p3></a></span></li>
-                            <li class = "box"><a href = "https://www.facebook.com/profile.php?id=100090699375511"><span class = "box-img-bg"><img class = "box-img" src = "img/archive.svg"><p3 class = "content-lable">長者資源</p3></a></span></li>
-                        </ul>
-                    </div>
-                    <div class = "content-row">
-                        <ul>
-                            <li class = "box"><a href = "https://www.facebook.com/profile.php?id=100090699375511"><span class = "box-img-bg"><img class = "box-img" src = "img/hospital.svg"><p3 class = "content-lable">醫療資源</p3></a></span></li>
-                            <li class = "box"><a href = "https://www.facebook.com/profile.php?id=100090699375511"><span class = "box-img-bg"><img class = "box-img" src = "img/car.svg"><p3 class = "content-lable">一般交通</p3></a></span></li>
-                            <li class = "box"><a href = "https://www.facebook.com/profile.php?id=100090699375511"><span class = "box-img-bg"><img class = "box-img" src = "img/bus.svg"><p3 class = "content-lable">醫療交通</p3></a></span></li>
-                            <li class = "box"><a href = "favorited.html"><span class = "box-img-bg"><img class = "box-img" src = "img/heart.svg"><p3 class = "content-lable">我的最愛</p3></a></span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    favorite
+    <div class = "table-container">
+        <table class="table table-bordered">
+            <thead class = "thead-dark">
+                <tr>
+                    <th class = "table-row">收藏項目</th>
+                    <th class = "table-row">編輯收藏</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td>123</td>
+                    <td><button class = "star-bt" onclick = "favClick(1)"><img class = "star" id = "1" src = "img/star-fill.svg"></button></td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td><button class = "star-bt" onclick = "favClick(2)"><img class = "star" id = "2" src = "img/star-fill.svg"></button></td>
+                </tr>
+        </table>
     </div>
-
 
 
 
