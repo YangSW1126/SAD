@@ -6,6 +6,9 @@
     <link rel = "stylesheet" href = "css/style_footer.css?v=<?=time()?>">
     <link rel = "stylesheet" href = "css/style_header.css?v=<?=time()?>">
     <link rel = "stylesheet" href = "css/style_activity.css?v=<?=time()?>">
+
+    <script src = "js/activity_script.js" defer></script>
+
     
     <title>Document</title>
     
@@ -24,6 +27,56 @@
         </div>
     </div>
     activity
+
+    <div class = activity-container>
+        <table class="content-table">
+            <thead>
+            <tr>
+                <th class = "table-row">活動項目</th>
+                <th class = "table-row" width = 12%>交通</th>
+                <th class = "table-row" width = 12%>加入收藏</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>老人居家生活補助</td>
+                    <th class = "table-row" width = 12%>交通</th>
+                    <td><button class = "star-bt" onclick = "actClick(1)"><img class = "star" id = "1" src = "img/star.svg"></button></td>
+                </tr>
+                <tr>
+                    <td>「你的，我的，17歳--112年高雄市長青學苑聯合成果展」</td>
+                    <th class = "table-row" width = 12%>交通</th>
+                    <td><button class = "star-bt" onclick = "actClick(2)"><img class = "star" id = "2" src = "img/star.svg"></button></td>
+                </tr>
+                <tr>
+                    <td>尚和歌仔戲劇團 《佈局者。韓信的棋盤》</td>
+                    <th class = "table-row" width = 12%>交通</th>
+                    <td><button class = "star-bt" onclick = "actClick(3)"><img class = "star" id = "3" src = "img/star.svg"></button></td>
+                </tr>
+                <tr>
+                    <td>112年公費流感疫苗接種-林園區建佑路院</td>
+                    <th class = "table-row" width = 12%>交通</th>
+                    <td><button class = "star-bt" onclick = "actClick(4)"><img class = "star" id = "4" src = "img/star.svg"></button></td>
+                </tr>
+                <tr>
+                    <td>林中補校林中補校招生中</td>
+                    <th class = "table-row" width = 12%>交通</th>
+                    <td><button class = "star-bt" onclick = "actClick(5)"><img class = "star" id = "5" src = "img/star.svg"></button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="type-col">
+            <ul>
+                <li><button class = "actSortType" onclick = "sort('lable')">追蹤標籤</button></li>
+                <li><button class = "actSortType" onclick = "sort('date')">日期排序</button></li>
+                <li><button class = "actSortType" onclick = "sort('range')">距離排序</button></li>
+            </ul>
+        </div>
+       
+    </div>
+
+
 
     <footer class="footer">
         <div class="footer_container">

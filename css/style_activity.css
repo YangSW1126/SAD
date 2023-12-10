@@ -1,0 +1,77 @@
+.activity-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.content-table {
+    border-collapse: collapse;
+    font-size: 20px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
+
+    width:60%;
+    margin: 150px auto 0px auto;
+
+}
+
+.type-col{
+    /*margin: 150px 8em 0px 0px; */
+}
+
+.content-table thead tr {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+    vertical-align:middle;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #000000;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #000000;
+}
+
+.star-bt{
+    border: none;
+    background-color: transparent;
+    outline: 0 !important;
+    display: block;
+    margin: auto;   
+}
+
+.star{
+    margin: 0px;
+    padding: 0;
+    width:40px;
+    height:40px;
+}
+
+.img-type{
+    width:40px;
+    height:40px;
+}
+
+
+
+.footer{
+	margin-top: 20%;
+}
