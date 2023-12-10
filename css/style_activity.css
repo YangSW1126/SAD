@@ -1,6 +1,5 @@
 .activity-container{
     display: flex;
-    flex-direction: row;
     
 }
 
@@ -12,12 +11,12 @@
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
 
     width:60%;
-    margin: 150px auto 0px auto;
-
+    margin: 150px 10rem 0px auto;
 }
 
 .type-col{
-    /*margin: 150px 8em 0px 0px; */
+    margin: 150px 10rem 0px 0px;
+    
 }
 
 .content-table thead tr {
