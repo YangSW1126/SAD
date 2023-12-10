@@ -12,11 +12,8 @@ body{
 	width: 100%;
 	margin:auto;
 	vertical-align: sub;
-
-}
-.row{
 	display: flex;
-	flex-wrap: wrap;
+
 }
 ul{
 	list-style: none;
@@ -94,7 +91,6 @@ ul{
     width: 100%;
 }
 }
-
 
 
 
