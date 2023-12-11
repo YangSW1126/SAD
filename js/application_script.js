@@ -27,3 +27,6 @@ function removeCondition(condition){
 function editCondition(){
     $('#addConditionModal').modal('hide');
 }
+
+//<li class = "condition" id = "0"><button class = "condition-bt" onclick = "removeCondition('0')">─</button>年滿65歲</li>
+//<li class = "condition" id = "1"><button class = "condition-bt" onclick = "removeCondition('1')">─</button>設籍並實際居住本市</li>

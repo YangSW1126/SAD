@@ -10,3 +10,5 @@ function favClick(num){
         star.src = imgs[1];
     }
 }
+
+
