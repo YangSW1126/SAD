@@ -7,15 +7,18 @@
 .content{
     margin: auto;
     display: block;
+    min-width: 942px;
 
 }
 
 .content-container{
 	margin:auto;
 	vertical-align: sub;
+
 }
 
 .content-col{
+
 
 }
 
