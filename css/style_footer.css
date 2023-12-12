@@ -6,13 +6,13 @@ body{
 *{
 	margin:0;
 	padding:0;
-	box-sizing: border-box;
+	box-sizing: border-box;   
 }
 .footer_container{
-	width: 100%;
-	margin:auto;
 	vertical-align: sub;
 	display: flex;
+	width: 1200px;
+	margin: auto;
 
 }
 ul{
@@ -21,12 +21,14 @@ ul{
 
 .footer{
 	background-color: #24262b;
-    padding: 70px 0 70px 15%;
-	margin-top: 50%;
+    padding: 70px 0 70px 0;
+	min-width: 1200px;
+
 }
 .footer-col{
-   width: 25%;
-   padding: 0 15px;
+	width: 130px;
+   	padding: 0 15px;
+   	margin: 0 auto;
 }
 .footer-col h4{
 	font-size: 18px;

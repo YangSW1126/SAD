@@ -42,19 +42,25 @@ table {
 
 
 .header-bg{
-    width: 100%;
+    min-width: 1200px;
+
     height: 80px;
     background-color: rgb(255, 212, 57);
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.icon{
-    position: absolute;
-    left: 15%;
-    top: 10px; 
+.header-container{
+    margin: 0 auto;    
+    justify-content: space-between;    
+    align-items: center;
+    display: flex;
+}
+.icon{ 
     height: 60px;
     width: 60px;
-    display: inline;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 15vw;
 }
 
 .logo-name{
@@ -79,12 +85,12 @@ table {
 .header-row{
     color:rgb(0, 0, 0);
     font: 18px "微軟正黑體";
-    position: absolute;
-    top:28px;
-    right: 10%; 
+    position: relative;
+    float: right;
+    margin-right: 10vw;
 }
 
 .link{
     display:inline;
-    margin-left: 50px;
+    margin-right: 1.5vw;
 }
