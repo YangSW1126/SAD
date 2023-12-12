@@ -5,21 +5,18 @@
 }
 
 .content{
-    width:100%;
+    margin: auto;
+    display: block;
 
 }
 
 .content-container{
-	width: 100%;
 	margin:auto;
 	vertical-align: sub;
 }
 
 .content-col{
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
+
 }
 
 .content-row{
