@@ -127,6 +127,10 @@
         </div>
     </div>
 
+    <?php
+        include_once 'template/footer.php';
+    ?>
+
     <script>
     $(document).ready(function(){
         $("#exampleModalCenter").modal('show');
