@@ -1,5 +1,11 @@
+.wrap{
+    min-height: 875px;
+    display: flex;
+
+}
+
 .condition-container{
-    width:80%;
+    width:1200px;
     display: block;
     margin: 50px auto 0 auto;   
 }

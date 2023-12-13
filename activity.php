@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel = "stylesheet" href = "css/style_footer.css?v=<?=time()?>">
     <link rel = "stylesheet" href = "css/style_header.css?v=<?=time()?>">
     <link rel = "stylesheet" href = "css/style_activity.css?v=<?=time()?>">
@@ -14,21 +16,9 @@
     
 </head>
 <body>
-    <div class = "header-bg">
-        <div class = "header-container">
-            <div><a href = "main.html" target="_blank" class = "icon-link"><img class = "icon" src = "img/icon.png"><a></div>
-            <div class = "logo-name"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link"></a></div>
-            <div class = "header-row">
-                <ul>
-                    <li class = "link"><a href = "main.html">首頁</a></li>
-                    <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">語音AI</a></li>
-                    <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">個人資料</a></li>
-                    <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">設定</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    activity
+    <?php
+        include_once 'template/header.php';
+    ?>
 
     <div class = activity-container>
         <table class="content-table">
@@ -51,7 +41,7 @@
                             </ul>
                         </div>
                     </td>
-                    <th class = "table-row" width = 12%><button><a href = "traffic.html"><img src = "img/traffic.png"></a></button></th>
+                    <th class = "table-row" width = 12%><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></th>
                     <td><button class = "star-bt" onclick = "actClick(1)"><img class = "star" id = "1" src = "img/star.svg"></button></td>
                 </tr>
                 <tr>
@@ -64,7 +54,7 @@
                             </ul>
                         </div>
                     </td>
-                    <th class = "table-row" width = 12%><button><a href = "traffic.html"><img src = "img/traffic.png"></a></button></th>
+                    <th class = "table-row" width = 12%><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></th>
                     <td><button class = "star-bt" onclick = "actClick(2)"><img class = "star" id = "2" src = "img/star.svg"></button></td>
                 </tr>
                 <tr>
@@ -77,7 +67,7 @@
                             </ul>
                         </div>
                     </td>
-                    <th class = "table-row" width = 12%><button><a href = "traffic.html"><img src = "img/traffic.png"></a></button></th>
+                    <th class = "table-row" width = 12%><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></th>
                     <td><button class = "star-bt" onclick = "actClick(3)"><img class = "star" id = "3" src = "img/star.svg"></button></td>
                 </tr>
                 <tr>
@@ -89,7 +79,7 @@
                         </ul>
                     </div>
                 </td>
-                    <th class = "table-row" width = 12%><button><a href = "traffic.html"><img src = "img/traffic.png"></a></button></th>
+                    <th class = "table-row" width = 12%><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></th>
                     <td><button class = "star-bt" onclick = "actClick(4)"><img class = "star" id = "4" src = "img/star.svg"></button></td>
                 </tr>
                 <tr>
@@ -100,7 +90,7 @@
                             </ul>
                         </div>
                     </td>
-                    <th class = "table-row" width = 12%><button><a href = "traffic.html"><img src = "img/traffic.png"></a></button></th>
+                    <th class = "table-row" width = 12%><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></th>
                     <td><button class = "star-bt" onclick = "actClick(5)"><img class = "star" id = "5" src = "img/star.svg"></button></td>
                 </tr>
             </tbody>
@@ -116,47 +106,8 @@
        
     </div>
     
-    <div class="footer">
-        <div class="footer_container">
-            <div class="footer-col">
-                <h4>顧客協助</h4>
-                <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">客服中心</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">幫助中心</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">付款方式</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">退貨退款</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>關於我們</h4>
-                <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">關於我們</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">加入我們</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">隱私權政策</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">限時特賣</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>付款方式</h4>
-                <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Mastercard</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">JCB</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">SEVEN</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FAMILY</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">HILIFE</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">T-CAT</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>關於我們</h4>
-                <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FaceBook</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Twitter</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Line</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <?php
+        include_once 'template/footer.php';
+    ?>
 </body> 
 </html>

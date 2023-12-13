@@ -1,3 +1,141 @@
-p{
-    color: blue;
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(255, 255, 255);  
+    height: 100%;
+    line-height: 1.5;
+    width:100%;
+}  
+
+.wrap{
+    height: 875px;
+    display: flex;
+    align-items: center;
+}
+
+.center{
+    margin: 0 auto;
+    min-width: 450px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+    
+}
+
+.center h1{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border-bottom: 1.5px solid silver;
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+
+} 
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(133, 133, 133);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+    font-weight:bold;
+}
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(133, 133, 133);
+} 
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color:rgb(255, 212, 57);
+}
+
+.forgot{
+    margin: -5px 0 20px 5px;
+    color: #747474;
+    cursor: pointer;
+}
+
+.forgot:hover{
+    text-decoration: underline;
+}
+
+input[type= "submit"]{
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50px;
+    background-color:rgb(255, 212, 57);
+    border-color: rgb(255, 212, 57);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    border: 0px solid;
+    line-height: 1;
+}
+
+
+input[type="submit"]:hover{
+    background-color:rgb(255, 120, 57);
+    transition: 0.1s;
+}
+
+.sign_up{
+    margin: 30px 0 0px 0;
+    padding: 0 0 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.sign_up a{
+    color: rgb(255, 212, 57);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sign_up a:hover{
+    text-decoration: underline;
+}
+
+
+.center h2{
+    text-align: center;
+    padding: 0px 0 0px 0;
+}
+
+.test-main{
+    color: rgb(255, 0, 191);
+    font-size: 50px;
 }

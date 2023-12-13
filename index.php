@@ -5,137 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    
+
     <link rel = "stylesheet" href = "css/style_footer.css?v=<?=time()?>">
     <link rel = "stylesheet" href = "css/style_header.css?v=<?=time()?>">
     <link rel = "stylesheet" href = "css/style_index.css?v=<?=time()?>">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     
     <title>Document</title>
     
 </head>
 <body>
-    <div class = "header-bg">
-        <div class = "header-container">
-            <div><a href = "main.html" target="_blank" class = "icon-link"><img class = "icon" src = "img/icon.png"><a></div>
-            <div class = "logo-name"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link"></a></div>
-            <div class = "header-row">
-                <ul>
-                    <li class = "link"><a href = "main.html">首頁</a></li>
-                    <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">語音AI</a></li>
-                    <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">個人資料</a></li>
-                    <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">設定</a></li>
-                </ul>
+    <?php include_once 'template/header.php';?>
+
+    <div class = "wrap">
+        <div class = "content">
+            <div class = "content-container">
+                <div class = "content-col">
+
+                        <div class = "content-row">
+                            <ul class = "content-ul">
+                                <li class = "box"><a href = "application.php"><span class = "box-img-bg"><img class = "box-img" src = "img/doc.svg"><p3 class = "content-lable">補助專區</p3></a></span></li>
+                                <li class = "box"><a href = "activity.php"><span class = "box-img-bg"><img class = "box-img" src = "img/activity.svg"><p3 class = "content-lable">活動推薦</p3></a></span></li>
+                                <li class = "box"><a href = "https://www.facebook.com/profile.php?id=100090699375511"><span class = "box-img-bg"><img class = "box-img" src = "img/book.svg"><p3 class = "content-lable">樂齡學習</p3></a></span></li>
+                                <li class = "box"><a href = "https://www.facebook.com/profile.php?id=100090699375511"><span class = "box-img-bg"><img class = "box-img" src = "img/archive.svg"><p3 class = "content-lable">長者資訊</p3></a></span></li>
+                            </ul>
+                        </div>
+                        <div class = "content-row">
+                            <ul>
+                                <li class = "box"><a href = "https://www.facebook.com/profile.php?id=100090699375511"><span class = "box-img-bg"><img class = "box-img" src = "img/hospital.svg"><p3 class = "content-lable">醫療資源</p3></a></span></li>
+                                <li class = "box"><a href = "traffic.php"><span class = "box-img-bg"><img class = "box-img" src = "img/car.svg"><p3 class = "content-lable">交通</p3></a></span></li>
+                                <li class = "box"><a href = "favorited.php"><span class = "box-img-bg"><img class = "box-img" src = "img/heart.svg"><p3 class = "content-lable">我的最愛</p3></a></span></li>
+                            </ul>
+                        </div>
+
+                </div>
             </div>
         </div>
     </div>
 
+    <?php include_once 'template/footer.php';?>
 
-
-
-<div class = "wrap">
-    <div class = "center">
-        <h1>登入</h1>
-        <form action = "main.html" method = "post">
-            <div class = "txt_field">
-                <input type = "text" name = "userEmail" required>
-                <span></span>
-                <label>Username</label>
-            </div>
-            <div class = "txt_field">
-                <input type = "password" name = "userPassword" required>
-                <span></span>
-                <label>Password</label>
-            </div>
-            <div class="forgot">忘記密碼</div>
-            <input type="submit" name = "submit" value = "登入">
-            <div class="sign_up">
-                <a href="RegistrationPage.php">註冊</a> 
-            </div>
-        </form>
-    </div>
-</div>
-
-</div>
-
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Update Log</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                因為只有把CSS刻出來，大部分的按鈕沒有實際作用<br>
-                但是都有簡單的效果或顯示在console log，所以還是可以按按看 :)<br>
-                如果有跑版或任何建議，請直接私訊群組<3 <br>
-                <img src = "img/wang.jpg" width = 300px height = 400px><br>
-                ----------------------------------------------------------<br>
-                12/10 新增"我的最愛"跟"活動推薦"
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div class="footer">
-        <div class="footer_container">
-            <div class="footer-col">
-                <h4>顧客協助</h4>
-                <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">客服中心</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">幫助中心</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">付款方式</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">退貨退款</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>關於我們</h4>
-                <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">關於我們</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">加入我們</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">隱私權政策</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">限時特賣</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>付款方式</h4>
-                <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Mastercard</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">JCB</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">SEVEN</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FAMILY</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">HILIFE</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">T-CAT</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>關於我們</h4>
-                <ul>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FaceBook</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Twitter</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Line</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <?php
-        include_once 'template/footer.php';
-    ?>
-
-    <script>
-    $(document).ready(function(){
-        $("#exampleModalCenter").modal('show');
-    });
-    </script>
-
+    <script src="js/script.js"></script>
 </body> 
 </html>

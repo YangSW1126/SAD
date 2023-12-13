@@ -94,3 +94,58 @@ table {
     display:inline;
     margin-right: 1.5vw;
 }
+
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    padding: 8px 0;
+
+}
+  
+
+.header-dropdown {
+    position: relative;
+    display: inline-block;
+
+
+}
+  
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 90px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.1), 0 0 6px -1px rgba(0,0,0,.1);
+    z-index: 1;
+    border: 0px ;
+    border-radius: 4px;
+    padding: 6px;
+    
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 4px 8px;
+    text-decoration: none;
+    display: block;
+
+}
+  
+.dropdown-menu:hover{
+    transition-delay:1s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+  
+.header-dropdown:hover .dropdown-menu {display: block;
+}
+
+/*  
+transition: opacity .1s ease-in-out 20ms,visibility 0s ease 120ms;
+*/
