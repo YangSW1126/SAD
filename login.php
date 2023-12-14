@@ -12,8 +12,10 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>    
+    <script src="js/script.js"></script>
+
     <title>Document</title>
+    <link rel = "icon" href = "img/icon.png" type = "image/png">
     
 </head>
 <body>

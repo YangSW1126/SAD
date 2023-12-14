@@ -10,6 +10,7 @@
     <link rel = "stylesheet" href = "css/style_traffic.css?v=<?=time()?>">
     
     <title>Document</title>
+    <link rel = "icon" href = "img/icon.png" type = "image/png">
 </head>
 <body>
     <?php

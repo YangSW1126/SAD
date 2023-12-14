@@ -18,7 +18,7 @@
     <script src = "js/application_script.js" defer></script>
     
     <title>Document</title>
-    
+    <link rel = "icon" href = "img/icon.png" type = "image/png">
 </head>
 <body>
     <?php
