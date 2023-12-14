@@ -38,7 +38,7 @@
                 <div class="forgot">忘記密碼</div>
                 <input type="submit" name = "submit" value = "登入">
                 <div class="sign_up">
-                    <a href="RegistrationPage.php">註冊</a> 
+                    <a href="registration.php">註冊</a> 
                 </div>
             </form>
         </div>
@@ -55,12 +55,7 @@
               </button>
             </div>
             <div class="modal-body">
-                因為只有把CSS刻出來，大部分的按鈕沒有實際作用<br>
-                但是都有簡單的效果或顯示在console log，所以還是可以按按看 :)<br>
-                如果有跑版或任何建議，請直接私訊群組<3 <br>
                 <img src = "img/wang.jpg" width = 300px height = 400px><br>
-                ----------------------------------------------------------<br>
-                12/10 新增"我的最愛"跟"活動推薦"
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>

@@ -12,14 +12,17 @@
                     session_start();
 
                     if(isset($_SESSION["userId"])){
-                        $li =  "<div class='header-dropdown'>
-                                    <button class='dropbtn'>" .$_SESSION['userEmail']. "</button>
-                                    <div class='dropdown-menu'>
-                                        <a href='functions/logout.php'>登出</a>
-                                        <a href='functions/logout.php'>登出</a>
-                                    </div>
-                                </div>";
+                        //$li =  "<li class = 'link'><a href = 'functions/logout.php'>".$_SESSION['userEmail']."</a></li>";
                     
+                        $li = "<span class='main-menu' onmouseover='switchMenu()' onmouseout='hideMenu()'>".$_SESSION["userEmail"]."<span style='font-size:12px;'> &#9660;</span>
+                                    <ul id='SubMenu1' class='sub-menu' style='display:none;'>
+                                        <li><a href='functions/logout.php'>登出</a></li>
+                                        <li><a href='functions/logout.php'>登出</a></li>
+                                        <li><a href='functions/logout.php'>登出</a></li>
+                                    </ul>
+                                </span>";
+
+
                         echo $li;
                     }
                     else{

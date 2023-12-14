@@ -45,7 +45,7 @@
     </div>
 
     <?php include_once 'template/footer.php';?>
-
+    
     <script src="js/script.js"></script>
 </body> 
 </html>

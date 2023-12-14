@@ -1,7 +1,13 @@
-(function() {
+var SubMenu = document.getElementById("SubMenu1");
 
-    document.querySelector('.nav-button').addEventListener('mouseover', function() {
+function switchMenu(){
+    if( SubMenu.style.display == 'none' ){ 
+        SubMenu.style.display = 'block';
+  }
+}
 
-      this.parentNode.parentNode.classList.toggle('closed')
-    }, false);
-  })();
+function hideMenu(){
+  if( SubMenu.style.display == 'block' ){ 
+    SubMenu.style.display = 'none';
+}
+}
