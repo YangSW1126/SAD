@@ -32,7 +32,7 @@
                         <div class = "content-row">
                             <ul>
                                 <li class = "box"><a href = "https://www.facebook.com/profile.php?id=100090699375511"><span class = "box-img-bg"><img class = "box-img" src = "img/hospital.svg"><p3 class = "content-lable">醫療資源</p3></a></span></li>
-                                <li class = "box"><a href = "traffic.php"><span class = "box-img-bg"><img class = "box-img" src = "img/car.svg"><p3 class = "content-lable">交通</p3></a></span></li>
+                                <li class = "box"><a href = "searchDestination.php"><span class = "box-img-bg"><img class = "box-img" src = "img/car.svg"><p3 class = "content-lable">交通</p3></a></span></li>
                                 <li class = "box"><a href = "favorited.php"><span class = "box-img-bg"><img class = "box-img" src = "img/heart.svg"><p3 class = "content-lable">我的最愛</p3></a></span></li>
                             </ul>
                         </div>
