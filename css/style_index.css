@@ -1,18 +1,17 @@
 .wrap{
-    height: 875px;
+    height: 100vh;
     display: flex;
-    align-items: center;
 }
 
 .content{
-    margin: 150px auto auto auto;
+    margin:  0 auto;
     display: block;
     min-width: 942px;
 
 }
 
 .content-container{
-	margin:auto 0;
+	margin: 15vh auto ;
 
 }
 

@@ -1,11 +1,11 @@
 <div class = "header-bg">
     <div class = "header-container">
-        <div><a href = "index.php" target="_blank" class = "icon-link"><img class = "icon" src = "img/icon.png"><a></div>
+        <div><a href = "index.php" class = "icon-link"><img class = "icon" src = "img/icon.png"><a></div>
         <div class = "logo-name"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link"></a></div>
         <div class = "header-row">
             <ul>
                 <li class = "link"><a href = "index.php">首頁</a></li>
-                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">語音AI</a></li>
+                <li class = "link"><a href = "voice_assistant.php">語音AI</a></li>
                 <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">個人資料</a></li>
                 <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">設定</a></li>
                 <?php 

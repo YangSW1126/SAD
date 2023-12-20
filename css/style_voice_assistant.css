@@ -1,0 +1,141 @@
+.wrap {
+  height: 100vh;
+  display: flex;
+}
+
+.container{
+  width:1200px;
+  margin: 50px auto 0 auto;
+}
+  
+.label {
+  width: 180px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-radius:5px;
+  background-color: #FFD439;
+  padding: 10px;
+
+}
+  
+.section {
+  width: 90%;
+  margin: 20px auto;
+  background-color: white;
+}
+
+.content {
+  font-size: 30px;
+  padding: 10px;
+  margin: 30px auto;
+}
+
+.button {
+  display: flex;
+  width:12%;
+  border: 2px solid ;
+  font-size: 18px;
+  border-color: #FFD439;
+  border-radius: 25px;
+  margin: 0 auto;
+  padding: 10px 0 ;
+  margin-bottom: 50px;
+  cursor: pointer;
+
+}
+
+img {
+  width: 14px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+span{
+  margin: 0 auto;
+  font-size: 20px;
+}
+.button:hover {
+  color:black;
+  background-color:#FFD439;
+  border-radius: 25px;
+}
+
+.line{
+  border-bottom: 2px solid #333;
+  width: 1100px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+
+/* 滑動式按鈕 */
+.switch_demo {
+  position: relative;
+  width: 150px;
+  margin: 0 auto;
+
+}
+.switch_demo-checkbox {
+  display: none;
+}
+.switch_demo-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px;
+}
+.switch_demo-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.switch_demo-inner:before,.switch_demo-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.switch_demo-inner:before {
+  content: "開啟";
+  padding-left: 10px;
+  background-color: #34A7C1;
+  color: #FFFFFF;
+}
+.switch_demo-inner:after {
+  content: "關閉";
+  padding-right: 10px;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: right;
+}
+.switch_demo-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 116px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+.switch_demo-checkbox:checked + .switch_demo-label .switch_demo-inner {
+  margin-left: 0;
+}
+.switch_demo-checkbox:checked + .switch_demo-label .switch_demo-switch {
+  right: 0px;
+}
+
