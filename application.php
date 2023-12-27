@@ -35,10 +35,53 @@
                 <hr class = "condition-hr">
                 <button class = "btn btn-outline-dark" data-toggle="modal" data-target="#addConditionModal"> 新增條件 </button>
             </div>
+
+            <table class="content-table">
+                <thead>
+                <tr>
+                    <th class = "table-row" width = 35%>補助項目</th>
+                    <th class = "table-row" width = 35%>補助項目條件</th>
+                    <th class = "table-row" width = 15%>查看教學</th>
+                    <th class = "table-row" width = 15%>加入收藏</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="https://www.facebook.com/profile.php?id=100090699375511">老人居家生活補助</a></td>
+                        <td></td>
+                        <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
+                        <td><button class = "star-bt" onclick = "appliClick(1)"><img class = "star" id = "a_1" src = "img/star.svg"></button></td>
+                    </tr>
+                    <tr>
+                        <td>中低收入入戶申請</td>
+                        <td></td>
+                        <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
+                        <td><button class = "star-bt" onclick = "appliClick(2)"><img class = "star" id = "a_2" src = "img/star.svg"></button></td>
+                    </tr>
+                    <tr>
+                        <td>輔具申請</td>
+                        <td></td>
+                        <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
+                        <td><button class = "star-bt" onclick = "appliClick(3)"><img class = "star" id = "a_3" src = "img/star.svg"></button></td>
+                    </tr>
+                    <tr>
+                        <td>敬老津貼</td>
+                        <td></td>
+                        <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
+                        <td><button class = "star-bt" onclick = "appliClick(4)"><img class = "star" id = "a_4" src = "img/star.svg"></button></td>
+                    </tr>
+                    <tr>
+                        <td>榮民就養給付</td>
+                        <td></td>
+                        <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
+                        <td><button class = "star-bt" onclick = "appliClick(5)"><img class = "star" id = "a_5" src = "img/star.svg"></button></td>
+                    </tr>
+                </tbody>
+            </table>
+ 
         </div>
+
     </div>
-
-
 
     <div class="modal fade" id="addConditionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">

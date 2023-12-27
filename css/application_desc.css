@@ -1,0 +1,28 @@
+  
+.label1 {
+  font-size: 50px;
+  height: 50px;
+  font-weight:bold;
+}
+
+.label2 {
+  font-size: 30px;
+  height: 30px;
+  font-weight:bold;
+}
+
+.label3 {
+  font-size:30px;
+  height: 40px;
+  font-weight:bold;
+}
+
+.content {
+  font-size: 25px;
+  padding: 10px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}

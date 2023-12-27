@@ -75,10 +75,14 @@ table {
 .icon-link,.link a{
     color: rgb(0, 0, 0);
     font-weight: bold;
+    padding: 5px 8px;
 }
 
 .link a:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 4px;
+    background-color: rgb(255, 120, 57);
     
 }
 
@@ -92,7 +96,7 @@ table {
 
 .link{
     display:inline;
-    margin-right: 1.5vw;
+    margin-right: 15px;
 }
 
 
