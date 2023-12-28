@@ -13,17 +13,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-
-
     <script src = "js/application_script.js" defer></script>
     
     <title>Document</title>
     <link rel = "icon" href = "img/icon.png" type = "image/png">
 </head>
 <body>
-    <?php
-        include_once 'template/header.php';
-    ?>
+    <?php include_once 'template/header.php';?>
     <div class = wrap>
         <div class = "condition-container">
             <div class = "condition-title">根據您輸入的條件:</div>
@@ -47,7 +43,7 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="https://www.facebook.com/profile.php?id=100090699375511">老人居家生活補助</a></td>
+                        <td>老人居家生活補助</a></td>
                         <td></td>
                         <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
                         <td><button class = "star-bt" onclick = "appliClick(1)"><img class = "star" id = "a_1" src = "img/star.svg"></button></td>
@@ -59,7 +55,7 @@
                         <td><button class = "star-bt" onclick = "appliClick(2)"><img class = "star" id = "a_2" src = "img/star.svg"></button></td>
                     </tr>
                     <tr>
-                        <td>輔具申請</td>
+                        <td><a href="application_detail.php">高雄市身心障礙者醫療復健費用及醫療輔具補助</a></td>
                         <td></td>
                         <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
                         <td><button class = "star-bt" onclick = "appliClick(3)"><img class = "star" id = "a_3" src = "img/star.svg"></button></td>
@@ -78,9 +74,7 @@
                     </tr>
                 </tbody>
             </table>
- 
         </div>
-
     </div>
 
     <div class="modal fade" id="addConditionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

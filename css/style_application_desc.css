@@ -1,0 +1,45 @@
+.wrap{
+  min-height: 100vh;
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.application-desc-container{
+  width:1200px;
+  display: block;
+  margin: 50px auto 0 auto;   
+}
+
+.container-name{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.container-step{
+  padding-top: 25px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.application-desc-content{
+  padding-top: 25px;
+  font-size: 24px;
+  border-bottom: 1.5px solid rgb(110, 110, 110);
+  padding-bottom: 20px;
+}
+
+
+.application-desc-content ul{
+  list-style-type: disc;
+}
+.application-desc-content li{
+  line-height: 1.5;
+}
+.btn{
+  margin-top: 25px;
+}
+
+.modal-body img{
+  width: 750px;
+
+}

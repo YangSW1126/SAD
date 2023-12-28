@@ -1,90 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style_footer.css?v=">
-    <link rel="stylesheet" type="text/css" href="style_header.css?">
-    <link rel="stylesheet" type="text/css" href="application.css?">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel = "stylesheet" href = "css/style_footer.css?v=<?=time()?>">
+    <link rel = "stylesheet" href = "css/style_header.css?v=<?=time()?>">
+    <link rel = "stylesheet" href = "css/style_application_detail.css?v=<?=time()?>">
+
+    
 </head>
 
 <body>
-    <link rel="stylesheet" type="text/css" href="style_header.css">
-<div class = "header-bg">
-    <div class = "header-container">
-        <div><a href = "index.php" target="_blank" class = "icon-link"><img class = "icon" src = "icon.png"><a></div>
-        <div class = "logo-name"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link"></a></div>
-        <div class = "header-row">
-            <ul>
-                <li class = "link"><a href = "index.php">首頁</a></li>
-                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">語音AI</a></li>
-                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">個人資料</a></li>
-                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">設定</a></li>
-                <li class = 'link'><a href = 'login.php'>登入</a></li>            
-            </ul>
+    <?php include_once 'template/header.php';?>
+
+    <div class = "wrap">
+        <div class = "application-detail-container">
+            <div class = "container-name">【補助資訊】高雄市身心障礙者醫療復健費用及醫療輔具補助</div>
+            <div class = "container-warning">注意事項:</div>
+            <div class = "application-detail-content">
+                <p><span style="color:#FF0000;"><strong>(高雄市38區衛生所皆可辦理，可將資料送至鄰近衛生所申請）</strong></span></p>
+                <p>一、補助對象係指設籍本市，依法領有效期內之身心障礙手冊(證明)者，且最近一年居住本市超過<span style="color:#FF0000;">一百八十三日</span>，且限居家自我照顧者，需符合「身心障礙者醫療復健費用及醫療輔具補助辦法」規定者。</p>
+                <p>二、身心障礙者醫療輔具補助項目：</p>
+                <p style="margin-left: 40px;">(一)電動拍痰器</p>
+                <p style="margin-left: 40px;">(二)抽痰機</p>
+                <p style="margin-left: 40px;">(三)化痰機</p>
+                <p style="margin-left: 40px;">(四)血氧偵測儀(血氧機)</p>
+                <p style="margin-left: 40px;">(五)咳痰(嗽)機</p>
+                <p style="margin-left: 40px;">(六)單相陽壓呼吸輔助器(C-PAP)</p>
+                <p style="margin-left: 40px;">(七)雙相陽壓呼吸輔助器(Bi-PAP)</p>
+                <p style="margin-left: 40px;">(八)氧氣製造機</p>
+                <p style="margin-left: 40px;">(九)UPS不斷電系統</p>
+                <p style="margin-left: 40px;">(十)壓力衣</p>
+                <p style="margin-left: 40px;">(十一)矽膠片</p>
+                <p>三、申請應具備文件如下：</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;申請人可上<strong>衛生局網站、本所網站下載、或逕至各區衛生所</strong>索取所需申請表</p>
+                <ul>
+                    <li>申請書</li>
+                    <li>委託書（非本人親洽申辦者，需填寫）</li>
+                    <li>戶口名簿影本或戶籍謄本或身分證影本（三者擇一檢附即可）(正本查驗後發還)</li>
+                    <li>身心障礙手冊、影本(正本查驗後發還)</li>
+                    <li>代辦人身分證影本（代辦人與申請者同一戶籍者(檢附戶口名簿影本)免附）</li>
+                    <li>中(低)收入證明正本、影本(正本查驗後發還，非低收入戶者免附)</li>
+                    <li>診斷證明書(身心障礙鑑定醫療機構或公立醫療機構所出具三個月內相關專科醫師診斷證明書),內容需註明申請項目</li>
+                    <li>醫療輔具評估報告(身心障礙鑑定醫療機構或公立醫療機構所出具三個月內相關專科醫師或專業人員醫療輔具評估報告書)〈咳痰(嗽)機、單(雙)相陽壓呼吸輔助器、氧氣製造機、壓力衣、矽膠片 申請須檢附〉</li>
+                </ul>
+            </div>
+            <div class = "tutorial-bt-container">
+                <a href = "application_desc.php"><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"> <span>點我查看教學</span></button></a>
+            </div>
         </div>
     </div>
-</div>
+    
+    
 
-<div class="label1">補助專區/輔具申請/查看教學</div>
-<div class="label2">項目名稱:高雄市身心障礙者醫療復健費用及醫療輔具補助</div>
-<div class="label3">注意事項:</div>
-<div class="content">
-    <ul>
-    <li>&bull; 步驟:</li>
-    <li>&bull;1.民眾至醫院開立證明</li>
-    <li>&bull;2.民眾提出申請(郵寄現場辦理)</li>
-    <li>&bull;3.衛生局審查(7天內)</li>
-    <li>&bull;4.若審查通過，核發通知(3天內)</li>
-    <li>&bull;5.民眾向特約廠商購買，並由廠商或民眾自行向衛生所(局)請款</li>
-    <li>&bull;6.衛生局受理及審核</li>
-    <li>&bull;7.若審核通過，衛生局將在30日內撥款</li>
-    </ul>
-
-    <a><img class="application" src="application_flow.png" width="50%" style="display:block; margin:auto;"></a>
-        
-</div>
-
-<div class="footer">
-    <div class="footer_container">
-        <div class="footer-col">
-            <h4>顧客協助</h4>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">客服中心</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">幫助中心</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">付款方式</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">退貨退款</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>關於我們</h4>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">關於我們</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">加入我們</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">隱私權政策</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">限時特賣</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>付款方式</h4>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Mastercard</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">JCB</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">SEVEN</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FAMILY</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">HILIFE</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">T-CAT</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>關於我們</h4>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FaceBook</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Twitter</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Instagram</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Line</a></li>
-            </ul>
-        </div>
-    </div>
-</div>  
-
+    <?php include_once 'template/footer.php';?>
 </body>
 </html>

@@ -17,9 +17,7 @@
     
 </head>
 <body>
-    <?php
-        include_once 'template/header.php';
-    ?>
+    <?php include_once 'template/header.php';?>
 
     <div class = activity-container>
         <table class="content-table">
@@ -72,7 +70,8 @@
                     <td><button class = "star-bt" onclick = "actClick(3)"><img class = "star" id = "3" src = "img/star.svg"></button></td>
                 </tr>
                 <tr>
-                    <td>「你的，我的，17歳--112年高雄市長青學苑聯合成果展」<br><div class = "activity_lable_container">
+                    <td><a href="activity_detail.php">「你的，我的，17歳--112年高雄市長青學苑聯合成果展」</a><br>
+                    <div class = "activity_lable_container">
                         <ul>
                             <li class = activity_lable>#藝術</li>
                             <li class = activity_lable>#歌仔戲</li>

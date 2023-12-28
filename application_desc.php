@@ -1,89 +1,63 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style_footer.css?v=">
-    <link rel="stylesheet" type="text/css" href="style_header.css?">
-    <link rel="stylesheet" type="text/css" href="application_desc.css?">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel = "stylesheet" href = "css/style_footer.css?v=<?=time()?>">
+    <link rel = "stylesheet" href = "css/style_header.css?v=<?=time()?>">
+    <link rel = "stylesheet" href = "css/style_application_desc.css?v=<?=time()?>">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <link rel="stylesheet" type="text/css" href="style_header.css">
-<div class = "header-bg">
-    <div class = "header-container">
-        <div><a href = "index.php" target="_blank" class = "icon-link"><img class = "icon" src = "icon.png"><a></div>
-        <div class = "logo-name"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank" class = "icon-link"></a></div>
-        <div class = "header-row">
+    <?php include_once 'template/header.php';?>
+
+    <div class = "wrap">
+        <div class = "application-desc-container">
+        <div class = "container-name">高雄市身心障礙者醫療復健費用及醫療輔具補助/查看教學</div>
+        <div class = "container-step">步驟:</div>
+        <div class = "application-desc-content">
             <ul>
-                <li class = "link"><a href = "index.php">首頁</a></li>
-                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511" target="_blank">語音AI</a></li>
-                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">個人資料</a></li>
-                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">設定</a></li>
-                <li class = 'link'><a href = 'login.php'>登入</a></li>            
+                <li>申請書</li>
+                <li>委託書（非本人親洽申辦者，需填寫）</li>
+                <li>戶口名簿影本或戶籍謄本或身分證影本（三者擇一檢附即可）(正本查驗後發還)</li>
+                <li>身心障礙手冊、影本(正本查驗後發還)</li>
+                <li>代辦人身分證影本（代辦人與申請者同一戶籍者(檢附戶口名簿影本)免附）</li>
+                <li>中(低)收入證明正本、影本(正本查驗後發還，非低收入戶者免附)</li>
+                <li>診斷證明書(身心障礙鑑定醫療機構或公立醫療機構所出具三個月內相關專科醫師診斷證明書),內容需註明申請項目</li>
+                <li>醫療輔具評估報告(身心障礙鑑定醫療機構或公立醫療機構所出具三個月內相關專科醫師或專業人員醫療輔具評估報告書)〈咳痰(嗽)機、單(雙)相陽壓呼吸輔助器、氧氣製造機、壓力衣、矽膠片 申請須檢附〉</li>
             </ul>
+        </div>
+
+        <button class = "btn btn-outline-dark" data-toggle="modal" data-target="#desc-flow">流程圖</button>
+
         </div>
     </div>
-</div>
 
-<div class="label1">補助專區/輔具申請/查看教學</div></br></br>
-<div class="label2">項目名稱:高雄市身心障礙者醫療復健費用及醫療輔具補助</div></br>
-<div class="label3">注意事項:</div>
-<div class="content">
-    應備文件</br>
-    1、申請表。</br>
-    2、身心障礙證明正反面影本（未過期）。</br>
-    3、戶口名簿影本或戶籍謄本或身分證影本（三者擇一檢附即可）。</br>
-    4、中(低)收入戶證明正本（非低收入戶者免附）。</br>
-    5、診斷證明書正本（身心障礙鑑定醫療機構或公立醫療機構所出具3個月內相關專科醫師診斷證明書）。</br>
-    6、醫療輔具評估報告書正本（身心障礙鑑定醫療機構或公立醫療機構所出具3個月內相關專科醫師或治療師簽署評估報告書，標準表未規定者免附）。</br>
-    7、申請委託書。(若非本人或配偶、直系親屬親洽申辦者，需檢附) 。</br>
-    8、代辦人身分證影本（代辦人與申請者同一戶籍者(檢附戶口名簿影本)免附）。</br>
-
-    <a href="application.php"><img class="application" src="application.png">補助教學</a>
-        
-</div>
-
-<div class="footer">
-    <div class="footer_container">
-        <div class="footer-col">
-            <h4>顧客協助</h4>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">客服中心</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">幫助中心</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">付款方式</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">退貨退款</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>關於我們</h4>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">關於我們</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">加入我們</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">隱私權政策</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">限時特賣</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>付款方式</h4>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Mastercard</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">JCB</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">SEVEN</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FAMILY</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">HILIFE</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">T-CAT</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>關於我們</h4>
-            <ul>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">FaceBook</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Twitter</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Instagram</a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100090699375511">Line</a></li>
-            </ul>
+    <div class="modal fade bd-example-modal-lg" id="desc-flow" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">流程圖</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <img src = "application_flow/application_flow.png"><br>
+            </div>
+            <div class="modal-footer">
+                <button type = 'button' class = 'btn btn-secondary' data-dismiss = 'modal'>關閉</button>
+            </div>
+          </div>
         </div>
     </div>
-</div>  
 
+    <?php include_once 'template/footer.php';?>
 </body>
 </html>

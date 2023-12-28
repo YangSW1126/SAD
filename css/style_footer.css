@@ -13,6 +13,8 @@ body{
 	display: flex;
 	width: 1200px;
 	margin: auto;
+	padding-bottom: 2.5rem;
+	border-bottom: 1.5px solid #e91e63;
 
 }
 ul{
@@ -95,5 +97,12 @@ ul{
 }
 }
 
+.footer-description{
+	padding-top: 2.5rem;
+	color: #ffffff;
+	text-align: center;
+}
 
-
+.footer-description ul li{
+	padding: 10px;
+}
