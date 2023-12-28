@@ -57,7 +57,7 @@
                     <tr>
                         <td><a href="application_detail.php">高雄市身心障礙者醫療復健費用及醫療輔具補助</a></td>
                         <td></td>
-                        <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
+                        <td><a href="application_desc.php"><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></a></td>
                         <td><button class = "star-bt" onclick = "appliClick(3)"><img class = "star" id = "a_3" src = "img/star.svg"></button></td>
                     </tr>
                     <tr>
