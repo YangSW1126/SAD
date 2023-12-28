@@ -20,7 +20,7 @@
             <div class = "container-name">【補校資訊】112學年度各國中小補校熱烈招生中</div>
             <div class = "school-detail-content">
                 <div class = "school_poster">
-                    <img src = "school_poster/school.jpg">
+                    <img src = "img/poster/school_poster/school.jpg">
                 </div>
                 <div class = "school-detail-content-text">
                     <p style="margin:0cm"><span style="font-family:Calibri,sans-serif"><span>為提供早年失學國民及外籍、大陸配偶基本教育課程，提高其教育程度、降低不識字率，本市設有19所國小補校、14所國中補校，歡迎民眾踴躍就讀。</span></span></p>

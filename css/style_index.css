@@ -1,5 +1,5 @@
 .wrap{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 }
 
@@ -59,3 +59,39 @@
     display:block
 }
 
+
+
+.color{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(119,187,221);
+}
+
+.color2{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(255, 136, 153);
+}
+
+.color3{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(119, 221, 119);
+}
+
+.color4{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(255, 221, 136);
+}
+
+.color5{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color:rgb(119, 119, 170);
+}

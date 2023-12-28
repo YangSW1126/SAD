@@ -8,7 +8,8 @@
     <link rel = "stylesheet" href = "css/style_header.css?v=<?=time()?>">
     <link rel = "stylesheet" href = "css/style_activity_detail.css?v=<?=time()?>">
 
-    
+    <title>Document</title>
+    <link rel = "icon" href = "img/icon.png" type = "image/png">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             <div class = "container-name">【活動資訊】你的，我的，17歲──112年高雄市長青學苑聯合成果展</div>
             <div class = "activity-detail-content">
                 <div class = "activity_poster">
-                    <img src = "activity_poster/act.jpg">
+                    <img src = "img/poster/activity_poster/act.jpg">
                 </div>
                 <div class = "activity-detail-content-text">
                     <p style="text-align: justify;">🌳「你的，我的，17歲──112年高雄市長青學苑聯合成果展」活動資訊</p>
