@@ -1,0 +1,40 @@
+.wrap{
+    min-height: 100vh;
+    display: flex;
+    padding-bottom: 80px;
+  }
+  
+.school-detail-container{
+    width:75%;
+    display: block;
+    margin: 50px auto 0 auto;    
+}
+
+.container-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+ 
+.school-detail-content{
+    margin-top: 20px;
+    display: flex;
+}
+
+.school-detail-content-text{
+    margin-left: 20px;
+    font-size: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.school_poster img{
+    width: 500px;
+}

@@ -1,6 +1,5 @@
 .activity-container{
     display: flex;
-    
 }
 
 .content-table {
@@ -10,8 +9,8 @@
     overflow: hidden;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
 
-    width:60%;
-    margin: 150px 0 0px auto;
+    width:75%;
+    margin: 8rem 0 0px auto;
 }
 
 .type-col{
