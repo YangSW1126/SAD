@@ -17,10 +17,13 @@
       <div class="section">
         <div class="label">語音搜尋功能</div>
         <div class="content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo porro fugit tempore sed quod ut expedita, molestias sapiente voluptate sunt?
-          lorem40
+          想要找「補助」，請說「幫我查...補助」
+          想要找「活動」，請說「幫我查...活動」
+          想要找「樂齡學習」，請說「幫我查...樂齡學習」
+          想要找「長者資訊」，請說「幫我查...長者資訊」
+          想要找「醫療資源」，請說「幫我查...醫療資源」
+          想要找「交通」，請說「我想去...」
+          想要看「我的最愛」，請說「我想看我的最愛」
         </div>
         <div class="button">
           <span><img src="img/microphone_icon.png" alt="search" class = "mic">語音搜尋</span>
@@ -30,8 +33,7 @@
       <div class="section">
           <div class="label">語音朗讀功能</div>
           <div class="content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            點擊下面的按鈕之後，AI就會自動念出網頁上的字喔~
           </div>
           
           <div class="center">

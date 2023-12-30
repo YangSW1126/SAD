@@ -47,8 +47,8 @@
     </div>
 
 
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="exampleModalLongTitle">Update Log</h5>
@@ -57,7 +57,8 @@
               </button>
             </div>
             <div class="modal-body">
-                <img src = "img/wang.jpg" width = 300px height = 400px><br>
+                <img src = "img/wang2.jpg" width = 350px>
+                <!--<img src = "img/1111.png" width = 300px>-->
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
@@ -69,12 +70,12 @@
     <?php
         include_once 'template/footer.php';
     ?>
-
+<!--
     <script>
     $(document).ready(function(){
         $("#exampleModalCenter").modal('show');
     });
     </script>
-
+-->
 </body> 
 </html>

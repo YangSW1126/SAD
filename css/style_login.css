@@ -131,3 +131,12 @@ input[type="submit"]:hover{
     color: rgb(255, 0, 191);
     font-size: 50px;
 }
+.modal-body{
+    display: wrap;
+    flex-wrap:wrap;
+    margin: 0 auto;
+}
+
+.modal-body img{
+    margin: 0 auto;
+}
