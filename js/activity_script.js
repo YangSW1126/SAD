@@ -5,9 +5,7 @@ function actClick(num,userid){
     query = star.src;
     if(query.includes("img/star-fill.svg")){
         fetch("functions/removeFromFavorite.php?category=activity&id=" + num + "&userid=" + userid);
-        console.log("functions/removeFromFavorite.php?category=activity&id=" + num + "&userid=" + userid);
         star.src = imgs[0];
-        
     }
     if(query.includes("img/star.svg")){
         fetch("functions/addToFavorite.php?category=activity&id=" + num + "&userid=" + userid);

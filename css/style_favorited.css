@@ -1,3 +1,15 @@
+.wrap{
+    min-height: 100vh;
+    display: flex;
+    padding-bottom: 80px;
+}
+  
+.favorite-container{
+    width:75%;
+    display: block;
+    margin: 0 auto;   
+}
+
 .content-table {
     border-collapse: collapse;
     font-size: 20px;
@@ -5,8 +17,8 @@
     overflow: hidden;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
     
-    width:75%;
-    margin: 150px auto 0px auto; 
+    width:100%;
+    margin: 8rem auto 0px auto; 
     
 }
 
@@ -40,12 +52,13 @@
     color: #000000;
 }
 
-.star-bt{
+button{
     border: none;
     background-color: transparent;
     outline: 0 !important;
     display: block;
     margin: auto;   
+    cursor: pointer;
 }
 
 .star{
@@ -53,13 +66,10 @@
     padding: 0;
     width:40px;
     height:40px;
+    cursor: pointer;
 }
 
-.img-type{
-    width:40px;
-    height:40px;
-}
-
-.footer{
-	margin-top: 20%;
+tr td img{
+    width: 50px;
+    height: 50px;
 }

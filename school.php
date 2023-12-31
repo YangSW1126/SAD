@@ -23,49 +23,30 @@
 
     <div class = wrap>
         <div class = "school-container">
-
-            <table class="content-table">
-                <thead>
-                <tr>
-                    <th class = "table-row">補校資訊</th>
-                    <th class = "table-row" width = 12%>交通</th>
-                    <th class = "table-row" width = 15%>加入收藏</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="school_detail.php">桃園市-112學年度各國中小補校熱烈招生中</a></td>
-                        <td><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></td>
-                        <td><button class = "star-bt" onclick = "schoolClick(1)"><img class = "star" id = "1" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>112學年度東門國小附設補校招生公告</td>
-                        <td><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></td>
-                        <td><button class = "star-bt" onclick = "schoolClick(2)"><img class = "star" id = "2" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>112學年度西門國小附設補校招生</td>
-                        <td><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></td>
-                        <td><button class = "star-bt" onclick = "schoolClick(3)"><img class = "star" id = "3" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>桃園市立大園國民中學附設補校</td>
-                        <td><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></td>
-                        <td><button class = "star-bt" onclick = "schoolClick(4)"><img class = "star" id = "4" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>南崁國中補校招生簡章</td>
-                        <td><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></td>
-                        <td><button class = "star-bt" onclick = "schoolClick(5)"><img class = "star" id = "5" src = "img/star.svg"></button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class = "displaySchool" id = "displaySchool"></div>
         </div>
     </div>
 
 
-    <?php
-        include_once 'template/footer.php';
-    ?>
+    <?php include_once 'template/footer.php';?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+            displaySchool();
+        }); 
+
+        function displaySchool(){
+            $.ajax({
+                url : "display/displaySchool.php",
+                type: 'post',
+                data:{
+                },
+                success:function(data,status){
+                    $('#displaySchool').html(data);
+
+                }
+            });
+        }
+    </script>
 </body> 
 </html>

@@ -56,5 +56,6 @@
     
 
     <?php include_once 'template/footer.php';?>
+    <script src = "js/speech.js"></script>
 </body>
 </html>

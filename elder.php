@@ -23,37 +23,30 @@
 
     <div class = wrap>
         <div class = "elder-container">
-
-            <table class="content-table">
-                <thead>
-                <tr>
-                    <th class = "table-row">長者資訊</th>
-                    <th class = "table-row" width = 15%>加入收藏</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="elder_detail.php">聘僱外看家庭可使用長照服務</a></td>
-                        <td><button class = "star-bt" onclick = "elderClick(1)"><img class = "star" id = "1" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>長照十年計畫2.0</td>
-                        <td><button class = "star-bt" onclick = "elderClick(2)"><img class = "star" id = "2" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>你不只是累了-認識老年衰弱</td>
-                        <td><button class = "star-bt" onclick = "elderClick(3)"><img class = "star" id = "3" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>失智照顧服務計畫</td>
-                        <td><button class = "star-bt" onclick = "elderClick(4)"><img class = "star" id = "4" src = "img/star.svg"></button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class = "displayElder" id = "displayElder"></div>
         </div>
     </div>
 
 
     <?php include_once 'template/footer.php';?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+            displayElder();
+        }); 
+
+        function displayElder(){
+            $.ajax({
+                url : "display/displayElder.php",
+                type: 'post',
+                data:{
+                },
+                success:function(data,status){
+                    $('#displayElder').html(data);
+
+                }
+            });
+        }
+    </script>
 </body> 
 </html>

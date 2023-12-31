@@ -1,12 +1,3 @@
-<?php
-    session_start();
-    session_start();
-    if(!isset($_SESSION["userId"])){
-        header("Location:login.php");
-    }
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,9 +16,17 @@
     
 </head>
 <body>
-    <?php include_once 'template/header.php';?>
-    <div class = "favorite-container">
-        <div class = "displayFavorite" id = "displayFavorite"></div>
+    <?php 
+        include_once 'template/header.php';
+        if(!isset($_SESSION["userId"])){
+            header("Location:login.php");
+        }
+    ?>
+
+    <div class = wrap>
+        <div class = "favorite-container">
+            <div class = "displayFavorite" id = "displayFavorite"></div>
+        </div>
     </div>
 
     <?php include_once 'template/footer.php'; ?>
@@ -50,6 +49,7 @@
                 }
             });
         }
+        
     </script>
         
 </body> 

@@ -23,47 +23,30 @@
 
     <div class = wrap>
         <div class = "hospital-container">
-
-            <table class="content-table">
-                <thead>
-                <tr>
-                    <th class = "table-row">醫療資訊</th>
-                    <th class = "table-row" width = 12%>交通</th>
-                    <th class = "table-row" width = 15%>加入收藏</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="hospital_detail.php">112年10月2日起高雄市流感疫苗開打了囉-林園區建佑醫院</a></td>
-                        <td><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></td>
-                        <td><button class = "star-bt" onclick = "hospitalClick(1)"><img class = "star" id = "1" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>112年12月楠梓區衛生所社區癌症篩檢服務預定表</td>
-                        <td><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></td>
-                        <td><button class = "star-bt" onclick = "hospitalClick(2)"><img class = "star" id = "2" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>「公費肺癌篩檢」開辦囉！</td>
-                        <td><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></td>
-                        <td><button class = "star-bt" onclick = "hospitalClick(3)"><img class = "star" id = "3" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>COVID-19合約醫療院所隨到隨打名單</td>
-                        <td><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></td>
-                        <td><button class = "star-bt" onclick = "hospitalClick(4)"><img class = "star" id = "4" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>國健署提供免費低劑量胸部電腦斷層(112/10/16起指定院所提供服務)</td>
-                        <td><button><a href = "traffic.php"><img src = "img/traffic.png"></a></button></td>
-                        <td><button class = "star-bt" onclick = "hospitalClick(5)"><img class = "star" id = "5" src = "img/star.svg"></button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class = "displayHospital" id = "displayHospital"></div>
         </div>
     </div>
 
 
     <?php include_once 'template/footer.php';?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+            displayHospital();
+        }); 
+
+        function displayHospital(){
+            $.ajax({
+                url : "display/displayHospital.php",
+                type: 'post',
+                data:{
+                },
+                success:function(data,status){
+                    $('#displayHospital').html(data);
+
+                }
+            });
+        }
+    </script>
 </body> 
 </html>

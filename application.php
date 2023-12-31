@@ -25,55 +25,15 @@
             <div class = "condition-title">根據您輸入的條件:</div>
             <div class = "selected-condition">
                 <ul id = "condition-ul">
-                    <li class = "condition" id = "0"><button class = "condition-bt" onclick = "removeCondition('0')">─</button>年滿65歲</li>
-                    <li class = "condition" id = "1"><button class = "condition-bt" onclick = "removeCondition('1')">─</button>設籍並實際居住本市</li>
+                    <li class = "condition" id = "a_0"><button class = "condition-bt" onclick = "removeCondition('a_0')">─</button>年滿65歲</li>
+                    <li class = "condition" id = "a_1"><button class = "condition-bt" onclick = "removeCondition('a_1')">─</button>設籍並實際居住本市</li>
                 </ul>
                 <hr class = "condition-hr">
                 <button class = "btn btn-outline-dark" data-toggle="modal" data-target="#addConditionModal"> 新增條件 </button>
             </div>
 
-            <table class="content-table">
-                <thead>
-                <tr>
-                    <th class = "table-row" width = 35%>補助項目</th>
-                    <th class = "table-row" width = 35%>補助項目條件</th>
-                    <th class = "table-row" width = 15%>查看教學</th>
-                    <th class = "table-row" width = 15%>加入收藏</th>
-                </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>老人居家生活補助</a></td>
-                        <td></td>
-                        <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
-                        <td><button class = "star-bt" onclick = "appliClick(1)"><img class = "star" id = "a_1" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>中低收入入戶申請</td>
-                        <td></td>
-                        <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
-                        <td><button class = "star-bt" onclick = "appliClick(2)"><img class = "star" id = "a_2" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td><a href="application_detail.php">高雄市身心障礙者醫療復健費用及醫療輔具補助</a></td>
-                        <td></td>
-                        <td><a href="application_desc.php"><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></a></td>
-                        <td><button class = "star-bt" onclick = "appliClick(3)"><img class = "star" id = "a_3" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>敬老津貼</td>
-                        <td></td>
-                        <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
-                        <td><button class = "star-bt" onclick = "appliClick(4)"><img class = "star" id = "a_4" src = "img/star.svg"></button></td>
-                    </tr>
-                    <tr>
-                        <td>榮民就養給付</td>
-                        <td></td>
-                        <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>
-                        <td><button class = "star-bt" onclick = "appliClick(5)"><img class = "star" id = "a_5" src = "img/star.svg"></button></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class = "displayApplication" id = "displayApplication"></div>
+
         </div>
     </div>
 
@@ -104,8 +64,25 @@
 
 
 
-    <?php
-        include_once 'template/footer.php';
-    ?>
+    <?php include_once 'template/footer.php';?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+            displayApplication();
+        }); 
+
+        function displayApplication(){
+            $.ajax({
+                url : "display/displayApplication.php",
+                type: 'post',
+                data:{
+                },
+                success:function(data,status){
+                    $('#displayApplication').html(data);
+
+                }
+            });
+        }
+    </script>
 </body> 
 </html>

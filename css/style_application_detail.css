@@ -72,3 +72,20 @@ p {
   color: blue;
   vertical-align: middle;
 }
+
+.application-detail-content button{
+  border: none;
+  background-color: transparent;
+  outline: 0 !important;
+  display: block; 
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 0;
+
+}
+
+.application-detail-content button:hover{
+  /*background-color:rgb(255, 136, 153)*/
+  color:rgb(119, 187, 221);
+}
