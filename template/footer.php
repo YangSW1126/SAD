@@ -42,7 +42,6 @@
 
         <div class="footer-col">
             <h4>我們的理念</h4>
-                123
         </div>
     </div>
 

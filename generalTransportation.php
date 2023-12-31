@@ -19,10 +19,10 @@
     <div class = "wrap">
         <div class="content"> 
             <!-- TODO  a 可能要改成submit button，然後輸入交通工具資料-->
-            <a href="pathPlanningCar.html" class="choice"><img src="./img/Car.png" alt="car">開車</a>
-            <a href="pathPlanningScooter.html" class="choice"><img src="./img//Scooter.png" alt="scooter">騎機車</a>
-            <a href="pathPlanningBus.html" class="choice"><img src="./img/Bus.png" alt="bus">大眾運輸工具</a>
-            <a href="pathPlanningWalk.html" class="choice"><img src="./img/Walking.png" alt="walking">走路</a>
+            <a href="pathPlanningCar.php" class="choice"><img src="./img/Car.png" alt="car">開車</a>
+            <a href="pathPlanningScooter.php" class="choice"><img src="./img//Scooter.png" alt="scooter">騎機車</a>
+            <a href="pathPlanningBus.php" class="choice"><img src="./img/Bus.png" alt="bus">大眾運輸工具</a>
+            <a href="pathPlanningWalk.php" class="choice"><img src="./img/Walking.png" alt="walking">走路</a>
         </div>
     </div>
 

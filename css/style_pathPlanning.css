@@ -1,0 +1,79 @@
+* {
+    font-size: 12px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+}
+
+.header a:hover {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.header img:hover {
+    height: 8rem;
+    width: 8rem;
+}
+
+#map {
+    height: 60rem;
+    width: 80rem;
+}
+
+#sidebar {
+    flex-basis: 15rem;
+    flex-grow: 1;
+    padding: 1rem;
+    min-width: 40rem;
+    height: 60rem;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+
+#button {
+    width: 20%;
+    padding: 10px;
+    background: #ffd43900;
+    color: #000;
+    text-align: center;
+    border-radius: 30px;
+    border: 5px solid #000;
+    /* logo */
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    text-decoration: none;
+    align-self: center;
+    margin: 1rem;
+}
+
+#button:hover {
+    background: #FFD439;
+}
+
+
+#panel td, #panel span, #panel div, #panel b{
+    font-size: 3rem;
+}
+/* 面板的文字大小 */
+
+.adp-stepicon,.adp-list img, .adp-substep img {
+    display: none;
+}
+/* 原本有小箭頭，但是不能調整大小，所以隱藏了 */

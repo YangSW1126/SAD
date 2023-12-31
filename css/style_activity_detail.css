@@ -52,6 +52,6 @@ p {
 }
 
 .activity-detail-content-text button:hover{
-    background-color:rgb(255, 136, 153)
-
+    /*background-color:rgb(255, 136, 153)*/
+    color:rgb(255, 136, 153);
 }

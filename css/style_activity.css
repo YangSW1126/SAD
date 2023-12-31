@@ -1,5 +1,13 @@
-.activity-container{
+.wrap{
     display: flex;
+    padding-bottom: 80px;
+    margin: 0 auto;  
+    justify-content: center;
+}
+
+.activity-container{
+    width:75%;
+    margin: 0 0 0 0;  
 }
 
 .content-table {
@@ -9,12 +17,13 @@
     overflow: hidden;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.15);
 
-    width:75%;
-    margin: 8rem 0 0px auto;
+    width:100%;
+    margin: 8rem 0 0px 0;
 }
 
 .type-col{
-    margin: 150px auto 0px 0px;
+    margin: 8rem 0px 0px 0;
+    justify-content: flex-start;
     
 }
 

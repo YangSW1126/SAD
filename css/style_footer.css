@@ -28,10 +28,11 @@ ul{
 
 }
 .footer-col{
-	width: 140px;
+	width: 150px;
    	padding: 0 15px;
    	margin: 0 auto;
 }
+
 .footer-col h4{
 	font-size: 18px;
 	color: #ffffff;
@@ -105,4 +106,8 @@ ul{
 
 .footer-description ul li{
 	padding: 10px;
+}
+
+.idea{
+	color: #bbbbbb;
 }
