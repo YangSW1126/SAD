@@ -41,7 +41,7 @@
             displayActivity();
         }); 
 
-        function displayActivity(){;
+        function displayActivity(){
             $.ajax({
                 url : "display/displayActivity.php",
                 type: 'post',
@@ -54,7 +54,7 @@
             });
         }
 
-        function sortLableByDistant(){;
+        function sortLableByDistant(){
             $.ajax({
                 url : "display/displayActivity_sortByDistant.php",
                 type: 'post',
@@ -67,7 +67,7 @@
             });
         }
 
-        function sortLableByDate(){;
+        function sortLableByDate(){
             $.ajax({
                 url : "display/displayActivity_sortByDate.php",
                 type: 'post',

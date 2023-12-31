@@ -1,3 +1,12 @@
+<?php
+    session_start();
+    session_start();
+    if(!isset($_SESSION["userId"])){
+        header("Location:login.php");
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,49 +25,32 @@
     
 </head>
 <body>
-    <?php
-        include_once 'template/header.php';
-    ?>
+    <?php include_once 'template/header.php';?>
+    <div class = "favorite-container">
+        <div class = "displayFavorite" id = "displayFavorite"></div>
+    </div>
 
-    <table class="content-table">
-        <thead>
-          <tr>
-            <th class = "table-row" width = 8%></th>
-            <th class = "table-row">收藏項目</th>
-            <th class = "table-row" width = 15%>編輯收藏</th>
-          </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img class = "img-type" src = "img\doc.svg"></td>
-                <td>老人居家生活補助</td>
-                <td><button class = "star-bt" onclick = "favClick(1)"><img class = "star" id = "1" src = "img/star-fill.svg"></button></td>
-            </tr>
-            <tr>
-                <td><img class = "img-type" src = "img\activity.svg"></td>
-                <td>「你的，我的，17歳--112年高雄市長青學苑聯合成果展」</td>
-                <td><button class = "star-bt" onclick = "favClick(2)"><img class = "star" id = "2" src = "img/star-fill.svg"></button></td>
-            </tr>
-            <tr>
-                <td><img class = "img-type" src = "img\activity.svg"></td>
-                <td>尚和歌仔戲劇團 《佈局者。韓信的棋盤》</td>
-                <td><button class = "star-bt" onclick = "favClick(3)"><img class = "star" id = "3" src = "img/star-fill.svg"></button></td>
-            </tr>
-            <tr>
-                <td><img class = "img-type" src = "img\hospital.svg"></td>
-                <td>112年公費流感疫苗接種-林園區建佑路院</td>
-                <td><button class = "star-bt" onclick = "favClick(4)"><img class = "star" id = "4" src = "img/star-fill.svg"></button></td>
-            </tr>
-            <tr>
-                <td><img class = "img-type" src = "img\book.svg"></td>
-                <td>林中補校林中補校招生中</td>
-                <td><button class = "star-bt" onclick = "favClick(5)"><img class = "star" id = "5" src = "img/star-fill.svg"></button></td>
-            </tr>
-        </tbody>
-    </table>
+    <?php include_once 'template/footer.php'; ?>
 
-    <?php
-        include_once 'template/footer.php';
-    ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+            displayFavorite();
+        }); 
+
+        function displayFavorite(){
+            $.ajax({
+                url : "display/displayFavorite.php",
+                type: 'post',
+                data:{
+                },
+                success:function(data,status){
+                    $('#displayFavorite').html(data);
+
+                }
+            });
+        }
+    </script>
+        
 </body> 
 </html>
