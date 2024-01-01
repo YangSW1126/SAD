@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
   <link rel="stylesheet" type="text/css" href="css/style_footer.css?v=<?=time()?>">
   <link rel="stylesheet" type="text/css" href="css/style_header.css?v=<?=time()?>">
   <link rel="stylesheet" type="text/css" href="css/style_voice_assistant.css?v=<?=time()?>">
+
 
   <title>Document</title>
 </head>

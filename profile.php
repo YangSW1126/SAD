@@ -1,6 +1,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  
   <link rel="stylesheet" type="text/css" href="css/style_footer.css?v=<?=time()?>">
   <link rel="stylesheet" type="text/css" href="css/style_header.css?v=<?=time()?>">
   <link rel="stylesheet" type="text/css" href="css/profile.css?v=<?=time()?>">

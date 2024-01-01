@@ -51,10 +51,11 @@ img {
   margin-right: 8px;
 }
 
-span{
+.button span{
   margin: 0 auto;
   font-size: 20px;
 }
+
 .button:hover {
   color:black;
   background-color:#FFD439;
