@@ -1,13 +1,13 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="style_footer.css?v=<?=time()?>">
-  <link rel="stylesheet" type="text/css" href="style_header.css?v=<?=time()?>">
-  <link rel="stylesheet" type="text/css" href="profile.css?v=<?=time()?>">
+  <link rel="stylesheet" type="text/css" href="css/style_footer.css?v=<?=time()?>">
+  <link rel="stylesheet" type="text/css" href="css/style_header.css?v=<?=time()?>">
+  <link rel="stylesheet" type="text/css" href="css/profile.css?v=<?=time()?>">
 </head>
 <body>
   <?php
-    include_once 'header.php';
+    include_once 'template/header.php';
   ?>
   <div class = "wrap">
     <div class="container">
@@ -69,7 +69,7 @@
   </div>
 
   <?php
-    include_once 'footer.php';
+    include_once 'template/footer.php';
   ?>
 </body>
 </html>
