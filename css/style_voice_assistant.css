@@ -144,9 +144,12 @@ img {
 
 /* 國/台語切換*/
 .onoffswitch {
-  position: relative; width: 100px;
+  position: relative; 
+  width: 100px;
   margin: auto;
-  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+  -webkit-user-select:none; 
+  -moz-user-select:none;
+   -ms-user-select: none;
 }
 .onoffswitch-checkbox {
   position: absolute;
@@ -154,8 +157,11 @@ img {
   pointer-events: none;
 }
 .onoffswitch-label {
-  display: block; overflow: hidden; cursor: pointer;
-  border: 2px solid #999999; border-radius: 20px;
+  display: block; 
+  overflow: hidden; 
+  cursor: pointer;
+  border: 2px solid #999999; 
+  border-radius: 20px;
 }
 .onoffswitch-inner {
   display: block; width: 200%; margin-left: -100%;
