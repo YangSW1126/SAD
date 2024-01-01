@@ -13,7 +13,6 @@
 </head>
 
 <body>
-//eeeeeeeeeeee
     <?php include_once 'template/header.php';?>
 
     <div class = "wrap">
