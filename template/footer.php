@@ -42,6 +42,7 @@
 
         <div class="footer-col">
             <h4>我們的理念</h4>
+            <li><font color="white">本平台成立的宗旨，透過以資訊技術為核心的平台提供優質且全面的高齡資訊，協助高齡人口解決各種挑戰。</font></li>
         </div>
     </div>
 

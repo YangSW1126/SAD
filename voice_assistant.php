@@ -45,6 +45,21 @@
               </label>
             </div>
           </div>
+
+          <div class="content">
+            點擊下面的按鈕之後可以切換 國語/台語 語音輸出喔~
+          </div> 
+
+          <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+              <label class="onoffswitch-label" for="myonoffswitch">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+              </label>     
+          </div>
+
+
+
       </div>
     </div>
   </div>
