@@ -6,8 +6,8 @@
             <ul>
                 <li class = "link"><a href = "index.php">首頁</a></li>
                 <li class = "link"><a href = "voice_assistant.php">語音AI</a></li>
-                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">個人資料</a></li>
-                <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">設定</a></li>
+                <li class = "link"><a href = "profile.php">個人資料</a></li>
+                <!-- <li class = "link"><a href = "https://www.facebook.com/profile.php?id=100090699375511">設定</a></li> -->
                 <?php 
                     session_start();
 
