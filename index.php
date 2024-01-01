@@ -41,7 +41,6 @@
                                     echo "<li class = 'box'><a href = 'login.php'><span class = 'box-img-bg'><img class = 'box-img' src = 'img/heart.svg'><p3 class = 'content-lable' style='color:rgb(119, 221, 119);'>我的最愛</p3></a></span></li>";
                                 }
                             ?>
-                            132
                         </ul>
                     </div>
                 </div>
