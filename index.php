@@ -33,7 +33,7 @@
                     <div class = "content-row">
                         <ul>
                             <li class = "box"><a href = "hospital.php"><span class = "box-img-bg"><img class = "box-img" src = "img/hospital.svg"><p3 class = "content-lable" style="color:rgb(119,187,221);">醫療資源</p3></a></span></li>
-                            <li class = "box"><a href = "searchDestination.php"><span class = "box-img-bg"><img class = "box-img" src = "img/car.svg"><p3 class = "content-lable">交通</p3></a></span></li>
+                            <li class = "box"><a href = "searchDestination.php"><span class = "box-img-bg"><img class = "box-img" src = "img/car.svg"><p3 class = "content-lable" style="color:rgb(255, 136, 153);">交通</p3></a></span></li>
                             <?php 
                                 if(isset($_SESSION["userId"])){
                                     echo "<li class = 'box'><a href = 'favorited.php'><span class = 'box-img-bg'><img class = 'box-img' src = 'img/heart.svg'><p3 class = 'content-lable' style='color:rgb(119, 221, 119);'>我的最愛</p3></a></span></li>";
@@ -47,13 +47,13 @@
             </div>
         </div>
     </div>
-
+<!--
     <div class = color></div>
     <div class = color2></div>
     <div class = color3></div>
     <div class = color4></div>
     <div class = color5></div>
-
+                            -->
 
     <?php include_once 'template/footer.php';?>
 </body> 
