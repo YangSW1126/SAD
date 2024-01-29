@@ -41,9 +41,9 @@ function removeCondition(condition){
     query[condition] = 0;
 }
 
-function editCondition(){
-    $('#addConditionModal').modal('hide');
-}
+
+
+
 
 var imgs = ["img/star.svg","img/star-fill.svg"];
 

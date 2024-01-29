@@ -21,7 +21,6 @@
         <div class = "content">
             <div class = "content-container">
                 <div class = "content-col">
-
                     <div class = "content-row">
                         <ul class = "content-ul">
                             <li class = "box" ><a href = "application.php"><span class = "box-img-bg"><img class = "box-img" src = "img/application.svg"><p3 class = "content-lable" style="color:rgb(119,187,221);">補助專區</p3></a></span></li>
