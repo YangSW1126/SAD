@@ -53,7 +53,7 @@
             </div>
             <div class="modal-footer">
                 <button type = 'button' class = 'btn btn-secondary' data-dismiss = 'modal'>取消</button>
-                <button type = 'button' class = 'btn btn-primary' onclick = "saveCondition()">更新</button>
+                <button type = 'button' class = 'btn btn-primary' onclick = "saveCondition(<?php echo $_SESSION['userId']?>)">更新</button>
                 <input type = "hidden" id = "hiddenData">
             </div>
           </div>
@@ -113,26 +113,15 @@
             $('#addConditionModal').modal("show");
         }
 
-        function saveCondition(){
-
+        function saveCondition(userId){
             let over65 = ($("#over65").prop("checked")) ? 1 : 0;
+            let test1 = ($("#test1").prop("checked")) ? 1 : 0;
+            let test2 = ($("#test2").prop("checked")) ? 1 : 0;
+            let test3 = ($("#test3").prop("checked")) ? 1 : 0;
 
-            if($("#test1").prop("checked")) {
-                test1 = 1;
-            }
-            if($("#test2").prop("checked")) {
-                test2 = 1;
-            }
-            if($("#test3").prop("checked")) {
-                test3 = 1;
-            }
+            $.post("functions/saveCondition.php",{
 
-            console.log(over65)
-            console.log(test1)
-            console.log(test2)
-            console.log(test3)
-
-            $.post("functions/editCondition.php",{
+                userId:userId,
                 over65:over65,
                 test1:test1,
                 test2:test2,
