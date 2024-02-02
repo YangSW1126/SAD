@@ -21,16 +21,18 @@
         <div class = "condition-container">
             <div class = "condition-title">根據您輸入的條件:</div>
             <div class = "selected-condition">
-                <ul id = "condition-ul">
-                    <li class = "condition" id = "a_0"><button class = "condition-bt" onclick = "removeCondition('a_0')">─</button>年滿65歲</li>
-                    <li class = "condition" id = "a_1"><button class = "condition-bt" onclick = "removeCondition('a_1')">─</button>設籍並實際居住本市</li>
-                </ul>
+                <div class = "displayCondition" id = "displayCondition"></div>
                 <hr class = "condition-hr">
-                <button class = "btn btn-outline-dark" onclick =  "editCondition(<?php echo $_SESSION['userId']?>)"> 新增條件</button>
+                <?php 
+                    if(isset($_SESSION["userId"])){
+                        $button = "<button type = 'button' class = 'btn btn-outline-dark' onclick = 'editCondition(".$_SESSION['userId'].")'>新增條件</button>";
+                    }else{
+                        $button = "<button type = 'button' class = 'btn btn-outline-dark' onclick = 'relink()' id = 'relink'>登入</button>";
+                    }
+                    echo $button;
+                ?>
             </div>
-
             <div class = "displayApplication" id = "displayApplication"></div>
-
         </div>
     </div>
 
@@ -64,9 +66,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>  
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script>
+    <script crossorigin="anonymous">
         $(document).ready(function(){
             displayApplication();
+        }); 
+
+        $(document).ready(function(){
+            displayCondition();
         }); 
 
         function displayApplication(){
@@ -77,6 +83,19 @@
                 },
                 success:function(data,status){
                     $('#displayApplication').html(data);
+
+                }
+            });
+        }
+
+        function displayCondition(){
+            $.ajax({
+                url : "display/displayCondition.php",
+                type: 'post',
+                data:{
+                },
+                success:function(data,status){
+                    $('#displayCondition').html(data);
 
                 }
             });
@@ -98,19 +117,31 @@
 
                 if(over65 == 1){
                     $('#over65').prop("checked", true);
+                }else{
+                    $('#over65').prop("checked", false);
                 }
+
                 if(test1 == 1){
                     $('#test1').prop("checked", true);
+                }else{
+                    $('#test1').prop("checked", false);
                 }
+
                 if(test2 == 1){
                     $('#test2').prop("checked", true);
+                }else{
+                    $('#test2').prop("checked", false);
                 }
+
                 if(test3 == 1){
                     $('#test3').prop("checked", true);
+                }else{
+                    $('#test3').prop("checked", false);
                 }
             });
 
             $('#addConditionModal').modal("show");
+
         }
 
         function saveCondition(userId){
@@ -120,7 +151,6 @@
             let test3 = ($("#test3").prop("checked")) ? 1 : 0;
 
             $.post("functions/saveCondition.php",{
-
                 userId:userId,
                 over65:over65,
                 test1:test1,
@@ -130,9 +160,30 @@
             function(data,status){
                 $('#addConditionModal').modal('hide');
             });
-        }            
-        
+            displayCondition();
+        }
 
+        function removeCondition(condition){
+            var userId = '<?php echo $_SESSION['userId'];?>';
+            $.ajax({
+                url: "functions/removeCondition.php",
+                type: 'post',
+                data:{
+                    userId:userId,    
+                    removeCondition:condition
+                },
+                success:function(data,status){
+                    displayCondition();
+
+                }
+            });
+        }
+
+
+
+        function relink(){
+            window.location.href = "login.php";
+        }
     </script>
 </body> 
 </html>
