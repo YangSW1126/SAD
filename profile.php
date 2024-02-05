@@ -7,9 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/profile.css?v=<?=time()?>">
 </head>
 <body>
-  <?php
-    include_once 'template/header.php';
-  ?>
+  <?php include_once 'template/header.php';?>
   <div class = "wrap">
     <div class="container">
       <div class="input-field">
@@ -69,8 +67,6 @@
     </div>
   </div>
 
-  <?php
-    include_once 'template/footer.php';
-  ?>
+  <?php include_once 'template/footer.php';?>
 </body>
 </html>

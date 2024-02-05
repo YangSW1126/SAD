@@ -22,16 +22,16 @@
             $gettest3 = $row["test3"];
 
             if($getover65 == 1){
-                $conditions.="<li class = 'condition'><button class = 'condition-bt' onclick = \"removeCondition('over65')\">─</button>年滿65歲</li>";
+                $conditions.="<li class = 'condition'><button class = 'condition-bt' onclick = \"removeCondition('over65',".$userId.")\">─</button>年滿65歲</li>";
             }
             if($gettest1 == 1){
-                $conditions.="<li class = 'condition'><button class = 'condition-bt' onclick = \"removeCondition('test1')\">─</button>test1</li>";
+                $conditions.="<li class = 'condition'><button class = 'condition-bt' onclick = \"removeCondition('test1',".$userId.")\">─</button>test1</li>";
             }
             if($gettest2 == 1){
-                $conditions.="<li class = 'condition'><button class = 'condition-bt' onclick = \"removeCondition('test2')\">─</button>test2</li>";
+                $conditions.="<li class = 'condition'><button class = 'condition-bt' onclick = \"removeCondition('test2',".$userId.")\">─</button>test2</li>";
             }
             if($gettest3 == 1){
-                $conditions.="<li class = 'condition'><button class = 'condition-bt' onclick = \"removeCondition('test3')\">─</button>test3</li>";
+                $conditions.="<li class = 'condition'><button class = 'condition-bt' onclick = \"removeCondition('test3',".$userId.")\">─</button>test3</li>";
             }
             $conditions.='</ul>';
         echo $conditions;

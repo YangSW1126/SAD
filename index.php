@@ -52,6 +52,7 @@
     <div class = color3></div>
     <div class = color4></div>
     <div class = color5></div>
+    document.getElementsByTagName('*').length
                             -->
 
     <?php include_once 'template/footer.php';?>

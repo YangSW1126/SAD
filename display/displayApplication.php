@@ -26,7 +26,21 @@
                     $table.=
                     '<tr>
                         <td><a href = "application_detail.php?id='.$applicationId.'">'.$applicationName.'</a><br></td>
-                        <td></td>
+                        <td>
+                            <ul>';
+                            $sql_getCondition = "SELECT condition.condition_name
+                                                 FROM `condition` JOIN `condition_list` ON condition.condition_id = condition_list.condition_id
+                                                 WHERE application_id = " .$applicationId;
+                            $result_getCondition = mysqli_query($link, $sql_getCondition);
+                            while($row_getCondition = mysqli_fetch_assoc($result_getCondition)){
+                                $condition = $row_getCondition["condition_name"];
+                                $table.='<li class = "required-condition">'.$condition.'</li>';
+                        }
+
+                    
+                    $table.='</ul>
+                        </td>
+
                         <td><button class = "tutorial-bt"><img class = "tutorial-img" src = "img/teacher.png"></button></td>';
                         if(isset($_SESSION["userId"])){
                             $sql_check = "SELECT application.application_id

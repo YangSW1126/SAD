@@ -10,7 +10,6 @@
     <link rel = "stylesheet" href = "css/style_header.css?v=<?=time()?>">
     <link rel = "stylesheet" href = "css/style_application.css?v=<?=time()?>">
 
-    <script src = "js/application_script.js" defer></script>
     
     <title>Document</title>
     <link rel = "icon" href = "img/icon.png" type = "image/png">
@@ -66,124 +65,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>  
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script crossorigin="anonymous">
-        $(document).ready(function(){
-            displayApplication();
-        }); 
-
-        $(document).ready(function(){
-            displayCondition();
-        }); 
-
-        function displayApplication(){
-            $.ajax({
-                url : "display/displayApplication.php",
-                type: 'post',
-                data:{
-                },
-                success:function(data,status){
-                    $('#displayApplication').html(data);
-
-                }
-            });
-        }
-
-        function displayCondition(){
-            $.ajax({
-                url : "display/displayCondition.php",
-                type: 'post',
-                data:{
-                },
-                success:function(data,status){
-                    $('#displayCondition').html(data);
-
-                }
-            });
-        }
-
-        function editCondition(userId){
-            $('#hiddenData').val(userId);
-
-            $.post("functions/editCondition.php",{
-                userId:userId,    
-            }, 
-            function(data,status){
-                var conditionData = JSON.parse(data);
-
-                var over65 = conditionData["over65"];
-                var test1 = conditionData["test1"];
-                var test2 = conditionData["test2"];
-                var test3 = conditionData["test3"];
-
-                if(over65 == 1){
-                    $('#over65').prop("checked", true);
-                }else{
-                    $('#over65').prop("checked", false);
-                }
-
-                if(test1 == 1){
-                    $('#test1').prop("checked", true);
-                }else{
-                    $('#test1').prop("checked", false);
-                }
-
-                if(test2 == 1){
-                    $('#test2').prop("checked", true);
-                }else{
-                    $('#test2').prop("checked", false);
-                }
-
-                if(test3 == 1){
-                    $('#test3').prop("checked", true);
-                }else{
-                    $('#test3').prop("checked", false);
-                }
-            });
-
-            $('#addConditionModal').modal("show");
-
-        }
-
-        function saveCondition(userId){
-            let over65 = ($("#over65").prop("checked")) ? 1 : 0;
-            let test1 = ($("#test1").prop("checked")) ? 1 : 0;
-            let test2 = ($("#test2").prop("checked")) ? 1 : 0;
-            let test3 = ($("#test3").prop("checked")) ? 1 : 0;
-
-            $.post("functions/saveCondition.php",{
-                userId:userId,
-                over65:over65,
-                test1:test1,
-                test2:test2,
-                test3:test3
-            }, 
-            function(data,status){
-                $('#addConditionModal').modal('hide');
-            });
-            displayCondition();
-        }
-
-        function removeCondition(condition){
-            var userId = '<?php echo $_SESSION['userId'];?>';
-            $.ajax({
-                url: "functions/removeCondition.php",
-                type: 'post',
-                data:{
-                    userId:userId,    
-                    removeCondition:condition
-                },
-                success:function(data,status){
-                    displayCondition();
-
-                }
-            });
-        }
-
-
-
-        function relink(){
-            window.location.href = "login.php";
-        }
-    </script>
+    <script src = "js/application_script.js"></script>
 </body> 
 </html>

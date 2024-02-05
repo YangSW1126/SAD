@@ -44,6 +44,16 @@
     margin-top: 15px;
 }
 
+.required-condition{
+    line-height: 1.25;
+    list-style: disc;
+}
+
+
+
+
+
+
 .btn-outline-dark{
     font-weight:bolder;
 }
